@@ -14,11 +14,8 @@
                 <img src="<?= get_template_directory_uri(); ?>/assets/img/me.jpg" class="img-fluid" alt="">
             </div>
             <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-                <h3>UI/UX &amp; Graphic Designer</h3>
-                <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
-                </p>
+                <h3><?= get_theme_mod('about_skill'); ?></h3>
+                <p class="fst-italic"><?= get_theme_mod('about_paragraph1'); ?></p>
                 <div class="row">
                     <div class="col-lg-6">
                         <ul>
@@ -37,10 +34,7 @@
                         </ul>
                     </div>
                 </div>
-                <p>
-                    Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-                    Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                </p>
+                <p><?= get_theme_mod('about_paragraph2'); ?></p>
             </div>
         </div>
 

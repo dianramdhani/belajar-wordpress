@@ -5,6 +5,7 @@ class Drl_Resume_Customizers
     {
         add_action('customize_register', [$this, 'hero_customizer']);
         add_action('customize_register', [$this, 'background_customizer']);
+        add_action('customize_register', [$this, 'about_customizer']);
     }
 
     public function hero_customizer($wp_customize)
@@ -23,6 +24,21 @@ class Drl_Resume_Customizers
         $this->generate_control($wp_customize, $section, 'instagram', 'Instagram', 'text', '');
         $this->generate_control($wp_customize, $section, 'linkedin', 'LinkedIn', 'text', '');
     }
+
+    public function about_customizer($wp_customize)
+    {
+        $section = 'about';
+        $wp_customize->add_section($section, array(
+            'title' => __('About', 'drl'),
+            'description' => sprintf(__('About Section', 'drl')),
+        ));
+
+        $this->generate_control($wp_customize, $section, 'skill', 'Skill', 'text', 'UI/UX & Graphic Designer');
+        $this->generate_control($wp_customize, $section, 'paragraph1', 'Paragraph 1', 'textarea', '');
+        $this->generate_control($wp_customize, $section, 'paragraph2', 'Paragraph 2', 'textarea', '');
+    }
+
+
 
     public function background_customizer($wp_customize)
     {
