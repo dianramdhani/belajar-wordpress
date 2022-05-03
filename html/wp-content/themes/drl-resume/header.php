@@ -21,6 +21,16 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <?
+  $background_image = get_theme_mod('background');
+  if ($background_image != '') :
+  ?>
+    <style>
+      body::before {
+        background-image: url("<?= $background_image; ?>");
+      }
+    </style>
+  <? endif; ?>
 </head>
 
 <body>

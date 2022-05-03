@@ -27,5 +27,5 @@ function drl_resume_enqueue_scripts()
 }
 add_action('wp_enqueue_scripts', 'drl_resume_enqueue_scripts');
 
-require_once get_template_directory() . '/classes/class-drl-resume-form-hero.php';
-new Drl_Resume_Form_Hero();
+require_once get_template_directory() . '/classes/class-drl-resume-customizers.php';
+new Drl_Resume_Customizers();
