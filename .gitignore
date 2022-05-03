@@ -1,0 +1,6 @@
+html/*
+!html/wp-content
+html/wp-content/*
+!html/wp-content/themes
+html/wp-content/themes/*
+!html/wp-content/themes/drl-*
